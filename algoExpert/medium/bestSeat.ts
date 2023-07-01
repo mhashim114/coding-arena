@@ -1,8 +1,8 @@
-function bestSeat(seats) {
-    let emptySeatsCount;
-    let longestEmptySeatCount = 0;
-    let emptySeatStartingIndex;
-    let emptySeatEndingIndex;
+function bestSeat(seats: number[]) {
+    let emptySeatsCount: number;
+    let longestEmptySeatCount: number = 0;
+    let emptySeatStartingIndex: number = -1;
+    let emptySeatEndingIndex: number = -1;
 
     for (let i = 1; i < seats.length; i++) {
         emptySeatsCount = 1;
@@ -10,7 +10,7 @@ function bestSeat(seats) {
             continue;
         }
 
-        let j = i + 1;
+        let j: number = i + 1;
         while (seats[j] === 0) {
             emptySeatsCount += 1;
             j += 1;
