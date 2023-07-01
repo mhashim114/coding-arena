@@ -1,3 +1,4 @@
+// O(n^2) time | O(n) space
 function twoNumberSum(array: number[], targetSum: number) {
     let result: number[] = [];
     for (let i = 0; i < array.length; i++) {
@@ -11,7 +12,7 @@ function twoNumberSum(array: number[], targetSum: number) {
     return result;
 }
 
-
+// O(n) time | O(n) space
 function twoNumberSum2(array: number[], targetSum: number) {
     let hashTable = {};
     for (let num of array) {
@@ -24,7 +25,7 @@ function twoNumberSum2(array: number[], targetSum: number) {
     return [];
 }
 
-
+// O(nlogn) time | O(1) space
 function twoNumberSum3(array: number[], targetSum: number) {
     let firstPointer = 0;
     let secondPointer = array.length - 1;
