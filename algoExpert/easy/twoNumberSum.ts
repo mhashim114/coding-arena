@@ -11,6 +11,7 @@ function twoNumberSum(array: number[], targetSum: number) {
     }
     return result;
 }
+console.log(twoNumberSum([1, 2, 3, 5], 5));
 
 // O(n) time | O(n) space
 function twoNumberSum2(array: number[], targetSum: number) {
