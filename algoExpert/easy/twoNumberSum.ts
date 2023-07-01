@@ -10,3 +10,16 @@ function twoNumberSum(array: number[], targetSum: number) {
     }
     return result;
 }
+
+
+function twoNumberSum2(array: number[], targetSum: number) {
+    let hashTable = {};
+    for (let num of array) {
+        let diff = targetSum - num;
+        if (diff in hashTable) {
+            return [diff, num];
+        }
+        hashTable[num] = true;
+    }
+    return [];
+}
