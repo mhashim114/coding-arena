@@ -1,3 +1,4 @@
+// O(n) time
 function findClosestValueInBst(tree: any, target: number) {
     let stack = [tree];
     let nearestValue = tree.value;
